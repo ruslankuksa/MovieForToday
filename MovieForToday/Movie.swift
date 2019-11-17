@@ -14,7 +14,7 @@ struct Results: Decodable {
 
 struct Movie: Decodable, Identifiable {
     let id: Int
-    let poster_path: String
+    let poster_path: String?
     let title: String
     let overview: String
     let vote_average: Double

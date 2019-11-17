@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4425D8C223812EA2007A621B /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4425D8C123812EA2007A621B /* MovieList.swift */; };
 		445C1E82237BFBF8008F733A /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C1E81237BFBF8008F733A /* ImageView.swift */; };
 		445C1E92237DFBD8008F733A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C1E91237DFBD8008F733A /* ImageLoader.swift */; };
 		44742285235C77F2005A7113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44742284235C77F2005A7113 /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4425D8C123812EA2007A621B /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		445C1E81237BFBF8008F733A /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		445C1E91237DFBD8008F733A /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		44742281235C77F2005A7113 /* MovieForToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieForToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 				4474228B235C77F2005A7113 /* MainView.swift */,
 				447422A0235CCD00005A7113 /* SegmentPickerView.swift */,
 				445C1E81237BFBF8008F733A /* ImageView.swift */,
+				4425D8C123812EA2007A621B /* MovieList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				445C1E92237DFBD8008F733A /* ImageLoader.swift in Sources */,
 				44742287235C77F2005A7113 /* SceneDelegate.swift in Sources */,
 				4474228C235C77F2005A7113 /* MainView.swift in Sources */,
+				4425D8C223812EA2007A621B /* MovieList.swift in Sources */,
 				4474228A235C77F2005A7113 /* MovieForToday.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

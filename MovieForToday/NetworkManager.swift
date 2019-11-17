@@ -11,10 +11,10 @@ import Foundation
 class NetWorkManager: ObservableObject {
     
     @Published var movies = [Movie]()
-    var url: URL?
     
-    func fetchData() {
-        guard let url = URL(string: "https://api.themoviedb.org/3/discover/movie?api_key=27147f4c44cc6fdf2e7f5b19e994a686&sort_by=popularity.desc") else { return }
+    func fetchData(withURL url: String) {
+        guard let url = URL(string: url) else { return }
+        print(url)
         let session = URLSession(configuration: .default)
         let task = session.dataTask(with: url) { data, response, error in
             if error == nil {
@@ -24,6 +24,7 @@ class NetWorkManager: ObservableObject {
                     let results = try decoder.decode(Results.self, from: data)
                     DispatchQueue.main.async {
                         self.movies = results.results
+                        self.movies = self.movies.filter { $0.poster_path != nil }
                         for each in self.movies {
                             print(each)
                         }
