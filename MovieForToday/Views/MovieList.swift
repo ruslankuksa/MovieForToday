@@ -20,8 +20,9 @@ struct MovieList: View {
             HStack {
                 ImageView(withURL: self.imagesURL + movie.poster_path!)
                 VStack(alignment: .leading, spacing: 10) {
-                    Text(movie.title).font(.system(size: 20))
+                    Text(movie.title).font(.system(size: 20)).padding(.top, 15)
                     Text(movie.overview.prefix(200)).font(.system(size: 14))
+                    Spacer()
                 }
             }
         }
