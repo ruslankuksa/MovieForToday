@@ -19,7 +19,10 @@ struct MovieList: View {
         List(networkManager.movies) { movie in
             HStack {
                 ImageView(withURL: self.imagesURL + movie.poster_path!)
-                Text(movie.title).font(.system(size: 20))
+                VStack(alignment: .leading, spacing: 10) {
+                    Text(movie.title).font(.system(size: 20))
+                    Text(movie.overview.prefix(200)).font(.system(size: 14))
+                }
             }
         }
         .onAppear {

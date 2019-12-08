@@ -72,6 +72,7 @@
 			children = (
 				44742284235C77F2005A7113 /* AppDelegate.swift */,
 				44742286235C77F2005A7113 /* SceneDelegate.swift */,
+				445C1E91237DFBD8008F733A /* ImageLoader.swift */,
 				44ABF049236C28F200B9505E /* NetworkManager.swift */,
 				4494BC422376C2C0000F1604 /* Movie.swift */,
 				4474229F235CB0D5005A7113 /* Views */,
@@ -80,7 +81,6 @@
 				44742295235C77F6005A7113 /* Info.plist */,
 				44742288235C77F2005A7113 /* MovieForToday.xcdatamodeld */,
 				4474228F235C77F6005A7113 /* Preview Content */,
-				445C1E91237DFBD8008F733A /* ImageLoader.swift */,
 			);
 			path = MovieForToday;
 			sourceTree = "<group>";
