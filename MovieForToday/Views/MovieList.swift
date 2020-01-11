@@ -16,18 +16,21 @@ struct MovieList: View {
     var parameter: String = ""
     
     var body: some View {
+            
         List(networkManager.movies) { movie in
-            HStack {
-                ImageView(withURL: self.imagesURL + movie.poster_path!)
-                VStack(alignment: .leading, spacing: 10) {
-                    Text(movie.title).font(.system(size: 20)).padding(.top, 15)
+            NavigationLink(destination: MovieDetail()) {
+                HStack {
+                    ImageView(withURL: self.imagesURL + movie.poster_path!)
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text(movie.title).font(.system(size: 20)).padding(.top, 15)
                     Text(movie.overview.prefix(200)).font(.system(size: 14))
-                    Spacer()
+                        Spacer()
+                    }
                 }
             }
         }
         .onAppear {
-            self.networkManager.fetchData(withURL: self.mainURL+self.parameter+self.apiKey)
+                self.networkManager.fetchData(withURL: self.mainURL+self.parameter+self.apiKey)
         }
     }
 }

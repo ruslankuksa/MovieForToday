@@ -12,13 +12,13 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
-            NavigationView {
-                VStack {
+            VStack {
+                NavigationView {
                     SegmentPickerView()
+                    .navigationBarTitle("Movies")
                 }
-                .navigationBarTitle(Text("Movies"))
             }
-            .colorScheme(.dark)
+        .colorScheme(.dark)
         }
     }
 }
